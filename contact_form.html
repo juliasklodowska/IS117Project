@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- DEVELOPER: Julia Sklodowska, IS117-003, Fall 2022 -->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Butler, New Jersey</title>
-    <link rel="shortcut icon" href="images/bulldog.jpg">
-    <link rel="stylesheet" href="styles/contact_form.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Butler, New Jersey</title>
+        <link rel="shortcut icon" href="images/bulldog.jpg">
+        <link rel="stylesheet" href="styles/contact_form.css">
 
-</head>
-<body>
-<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-    <div class="container-fluid" id="nav">
-        <a class="navbar-brand" href="index.html" style="color:#717378">Butler NJ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about_butler.html">About Butler</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="events_calender.html">Events Calendar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="attractions.html">Attractions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="review.html">Review</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contact Me</a>
-                    <ul class="dropdown-menu" style="background-color: #f8f8f8">
-                        <li><a class="dropdown-item" href="contact_form.html">Contact Form</a></li>
-                        <li><a class="dropdown-item" href="tour.html">Schedule a Tour</a></li>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+            <div class="container-fluid" id="nav">
+                <a class="navbar-brand" href="index.html" style="color:#717378">Butler NJ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_butler.html">About Butler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events_calender.html">Events Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="attractions.html">Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="review.html">Review</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contact Me</a>
+                            <ul class="dropdown-menu" style="background-color: #f8f8f8">
+                                <li><a class="dropdown-item" href="contact_form.html">Contact Form</a></li>
+                                <li><a class="dropdown-item" href="tour.html">Schedule a Tour</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid p-1 text-white text-center" id="contact">
+            <h2>Contact Form</h2>
         </div>
-    </div>
-</nav>
-<div class="container-fluid p-1 text-white text-center" id="contact">
-    <h2>Contact Form</h2>
-</div>
-<div class="container-fluid text-white text-center" id="form">
-    <h5 class="form">Want to Ask a Question? Contact Me by Filling out this Form!!</h5>
-</div>
-<form action="submission.html" method="POST">
-    <div class="name">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
-    </div>
-    <div class="mb-3 mt-3">
-    <label for="email">Email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-    </div>
-        <div class="form-check mb-3">
-        <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="remember"> Remember me
-        </label>
-    </div>
-    <div class="mb-3 mt-3">
-        <label for="comment">Comment:</label>
-        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Enter Comment" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary" id="button">Submit</button>
+        <div class="container-fluid text-white text-center" id="form">
+            <h5 class="form">Want to Ask a Question? Contact Me by Filling out this Form!!</h5>
+        </div>
+        <form action="submission.html" method="POST">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+            </div>
+            <div class="mb-3 mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+                <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Enter Comment" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="button">Submit</button>
 
-</form>
-<footer class="container-fluid p-1">
-    <p>&copy;2022, Julia Sklodowska, Butler NJ, 07405 <span class="link"><a class="terms-link" href="#">Terms of Service</a><span>  </span><a class="privacy-link" href="#">Privacy Statement</a></span>
-</footer>
-</body>
+        </form>
+        <footer class="container-fluid p-1">
+            <p>&copy;2022, Julia Sklodowska, Butler NJ, 07405 <span class="link"><a class="terms-link" href="#">Terms of Service</a><span>  </span><a class="privacy-link" href="#">Privacy Statement</a></span>
+        </footer>
+    </body>
 </html>

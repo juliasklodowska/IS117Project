@@ -1,105 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- DEVELOPER: Julia Sklodowska, IS117-003, Fall 2022 -->
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Butler, New Jersey</title>
-  <link rel="shortcut icon" href="images/bulldog.jpg">
-  <link rel="stylesheet" href="styles/tour.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Butler, New Jersey</title>
+    <link rel="shortcut icon" href="images/bulldog.jpg">
+    <link rel="stylesheet" href="styles/tour.css">
 
-</head>
-<body>
-<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-  <div class="container-fluid" id="nav">
-    <a class="navbar-brand" href="index.html" style="color:#717378">Butler NJ</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about_butler.html">About Butler</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="events_calender.html">Events Calendar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="attractions.html">Attractions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="review.html">Review</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contact Me</a>
-          <ul class="dropdown-menu" style="background-color: #f8f8f8">
-            <li><a class="dropdown-item" href="contact_form.html">Contact Form</a></li>
-            <li><a class="dropdown-item" href="tour.html">Schedule a Tour</a></li>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+      <div class="container-fluid" id="nav">
+        <a class="navbar-brand" href="index.html" style="color:#717378">Butler NJ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_butler.html">About Butler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events_calender.html">Events Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="review.html">Review</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contact Me</a>
+              <ul class="dropdown-menu" style="background-color: #f8f8f8">
+                <li><a class="dropdown-item" href="contact_form.html">Contact Form</a></li>
+                <li><a class="dropdown-item" href="tour.html">Schedule a Tour</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid p-1 text-white text-center" id="tour">
+      <h2>Tour Form</h2>
     </div>
-  </div>
-</nav>
-<div class="container-fluid p-1 text-white text-center" id="tour">
-  <h2>Tour Form</h2>
-</div>
-<div class="container-fluid text-white text-center" id="form">
-  <h5 class="form">Want to Schedule a Tour?</h5>
-</div>
-<form action="submission.html" method="POST">
-  <div class="name">
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
-  </div>
-  <div class="mb-3 mt-3">
-    <label for="email">Email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-  </div>
-  <div class="date">
-    <label for="date">Date Availability:</label>
-    <input type="text" class="form-control" id="date" placeholder="Enter Date" name="date" required>
-  </div>
-  <div class="time">
-    <span>Time Frame: </span>
-    <input type="radio" class="date-input" id="eight" name="eight" value="8AM-10AM">
-    <label class="date-label" for="eight">8AM-10AM</label>
-    <input type="radio" class="date-input" id="twelve" name="twelve" value="12PM-2PM">
-    <label class="date-label" for="twelve">12PM-2PM</label>
-    <input type="radio" class="date-input" id="four" name="four" value="4PM-6PM">
-    <label class="date-label" for="four">4PM-6PM</label>
-  </div>
-
-  <button type="submit" class="btn btn-primary" id="button">Submit</button>
-
-</form>
-<div class="container-fluid text-white text-center" id="me">
-  <h5 class="me">Want More? Okay! You can...</h5>
-</div>
-<section class="container-fluid text-white p-1 text-center" id="myinfo">
-
-    <div>Call: 973-294-4260</div>
-    <div>Email: julia.sklodowska17@gmail.com</div>
-    <div>Look for a Home: <a class='info' style="color: #f8f8f8" href="https://www.homes.com/butler-nj/?gclid=d9f77accde901e457905194d0f99b99b&gclsrc=3p.ds" target="_blank">Homes for Sale</a></div>
-
-</section>
-
-<div class="container-fluid text-white text-center" id="about">
-  <h5 class="me">Short About Me</h5>
-</div>
-<section class="container-fluid text-white p-1 text-center" id="aboutme">
-
-  <p>My name is Julia Sklodowska. I am a first-year college student studying at NJIT and I am from Butler NJ. I have lived in Butler NJ for most of my life and know a lot about the town. As for more about me, I like to paint and draw, as well as play the flute. I hope you learned a bit from my information I provided and that you enjoyed.</p>
-</section>
-
-<footer class="container-fluid p-1">
-  <p>&copy;2022, Julia Sklodowska, Butler NJ, 07405 <span class="link"><a class="terms-link" href="#">Terms of Service</a><span>  </span><a class="privacy-link" href="#">Privacy Statement</a></span>
-</footer>
-</body>
-
+    <div class="container-fluid text-white text-center" id="form">
+      <h5 class="form">Want to Schedule a Tour?</h5>
+    </div>
+    <form action="submission.html" method="POST">
+      <div class="name">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+      <div class="date">
+        <label for="date">Date Availability:</label>
+        <input type="text" class="form-control" id="date" placeholder="Enter Date" name="date" required>
+      </div>
+      <div class="time">
+        <span>Time Frame: </span>
+        <input type="radio" class="date-input" id="eight" name="eight" value="8AM-10AM">
+        <label class="date-label" for="eight">8AM-10AM</label>
+        <input type="radio" class="date-input" id="twelve" name="twelve" value="12PM-2PM">
+        <label class="date-label" for="twelve">12PM-2PM</label>
+        <input type="radio" class="date-input" id="four" name="four" value="4PM-6PM">
+        <label class="date-label" for="four">4PM-6PM</label>
+      </div>
+      <button type="submit" class="btn btn-primary" id="button">Submit</button>
+    </form>
+    <div class="container-fluid text-white text-center" id="me">
+      <h5 class="me">Want More? Okay! You can...</h5>
+    </div>
+    <section class="container-fluid text-white p-1 text-center" id="myinfo">
+        <div>Call: 973-294-4260</div>
+        <div>Email: julia.sklodowska17@gmail.com</div>
+        <div>Look for a Home: <a class='info' style="color: #f8f8f8" href="https://www.homes.com/butler-nj/?gclid=d9f77accde901e457905194d0f99b99b&gclsrc=3p.ds" target="_blank">Homes for Sale</a></div>
+    </section>
+    <div class="container-fluid text-white text-center" id="about">
+      <h5 class="me">Short About Me</h5>
+    </div>
+    <section class="container-fluid text-white p-1 text-center" id="aboutme">
+      <p>My name is Julia Sklodowska. I am a first-year college student studying at NJIT and I am from Butler NJ. I have lived in Butler NJ for most of my life and know a lot about the town. As for more about me, I like to paint and draw, as well as play the flute. I hope you learned a bit from my information I provided and that you enjoyed.</p>
+    </section>
+    <footer class="container-fluid p-1">
+      <p>&copy;2022, Julia Sklodowska, Butler NJ, 07405 <span class="link"><a class="terms-link" href="#">Terms of Service</a><span>  </span><a class="privacy-link" href="#">Privacy Statement</a></span>
+    </footer>
+  </body>
 </html>

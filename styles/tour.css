@@ -6,10 +6,6 @@ a:focus, a:hover {
     text-decoration: underline !important;
     color: black !important;
 }
-a:visited {
-    color: gray;
-
-}
 
 .dropdown-menu {
     right: 0 !important;

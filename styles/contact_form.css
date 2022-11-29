@@ -1,0 +1,72 @@
+/*DEVELOPER: Julia Sklodowska, IS117-003, Fall 2022 */
+body {
+    background-color: #f8f8f8;
+}
+a:focus, a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+
+}
+#contact {
+    background-color: #344ea8;
+    color: #f8f8f8;
+    margin-bottom: 5%;
+
+}
+#form {
+    background-color: #344ea8;
+    color: #f8f8f8; !important
+}
+.form {
+    padding: 1%;
+    margin: 0;
+}
+form {
+    background-color: #e7c346;
+    padding: 3%;
+}
+#button {
+    background-color: #344ea8 !important;
+    border-color:#344ea8 !important ;
+    color: #f8f8f8 !important;
+}
+label {
+    color: #f8f8f8;
+}
+footer {
+    clear: left;
+    width: 100%;
+    background-color: #344ea8;
+    margin-top: 5%;
+
+}
+footer p {
+    text-align: left;
+    color: #f8f8f8;
+    padding: 1em 1em 0.5em 1em;
+}
+
+.link {
+    float: right;
+}
+.terms-link, .privacy-link{
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+    footer p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size: 10px;
+    }
+}
